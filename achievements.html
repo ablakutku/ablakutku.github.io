@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başarılarım</title>
+    <style>
+
+body {
+  background: #060608;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+}
+
+.navMenu {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 200px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.htmlp{
+    margin-left: 600px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+
+}
+
+.progressbar{
+    margin-top: 300px;
+}
+
+.progress1 {
+  margin-left: 600px;
+  margin-top: 8px;
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 500px;
+}
+
+.progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 90%; }
+}
+
+.others{
+    margin-top: 600px;
+    margin-left: -540px;
+}
+
+h2{
+    color: white;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navMenu">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="contact.html">Kimim Ben?</a>
+        <a href="jobs.html">Yaptıgım Isler</a>
+        <a href="achievements.html">Başarılarım</a>
+      </nav>
+    
+      <div class="progressbar">
+        <div class="htmlp"><p>HTML&CSS</p></div>
+        <div class="progress1">
+            <div class="progress-value"></div>
+          </div>
+      </div>
+
+      <div class="others">
+            <h2>I am constantly trying to learn. I'll update here as I learn.</h2>
+      </div>
+
+</body>
+</html>
