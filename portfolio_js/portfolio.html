@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utku Ablak</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #solpanel{
+            width: 30%;
+            height: 100vh;
+            background: #6E85B7;
+            float: left;
+            
+        }
+        #sagpanel{
+            width: 70%;
+            height: 100vh;
+            background: #FD841F;
+            float: left;
+            text-align: center;
+
+        }
+
+        .container {
+  color: var(--color);
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  text-align: right;
+  width: 60%;
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.stack span {
+  font-weight: bold;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  font-size: 4rem;
+  --stack-height: calc(100% / var(--stacks) - 1px);
+  --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+  --clip-top: calc(var(--stack-height) * var(--index));
+  --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+  clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+  animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+}
+
+.stack span:nth-child(odd) { --glitch-translate: 8px; }
+.stack span:nth-child(even) { --glitch-translate: -8px; }
+
+@keyframes stack {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+  };
+  60% {
+    opacity: 0.5;
+    transform: translateX(50%);
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    transform: translate(var(--glitch-translate));
+  }
+  2% {
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  4%, 100% {  text-shadow: none; transform: none; }
+}
+
+        
+    </style>
+</head>
+<body>
+
+
+    <div id="solpanel">
+
+        <ul style="font-size: 25px;">
+            <li onclick="fonksiyon1()">Ana Sayfa</li>
+            <br>
+            <li onclick="fonksiyon2()">Ben Kimim?</li>
+            <br>
+            <li onclick="fonksiyon3()">Appendchild</li>
+        </ul>
+
+    </div>
+
+    <div id="sagpanel">
+
+        <h2>Burası Ana Sayfa</h2>
+        <p style="font-size: 28px;">Sol Taraftaki Menülerden Kolayca Geçiş Yapabilirsin.</p>
+        <p style="font-size: 32px;">Bu sitede bana ait çoğu bilgiyi bulabileceksiniz.</p>
+        <div class="container">
+        NEOS YAZILIM
+        
+        <div class="stack" style="--stacks: 3;">
+          <span style="--index: 0;">UTKU ABLAK</span>
+          <span style="--index: 1;">UTKU ABLAK</span>
+          <span style="--index: 2;">UTKU ABLAK</span>
+        </div>
+        <span class="right">Jr. Developer</span>
+      </div>
+        
+    </div>
+
+
+
+
+    <script>
+
+
+        function fonksiyon1(){
+
+            document.getElementById("sagpanel").style.backgroundColor="#FD841F"
+            document.getElementById("sagpanel").style.textAlign="center"
+            document.getElementById("sagpanel").innerHTML=
+            `
+            <h2>Burası Ana Sayfa</h2>
+            <p style="font-size: 28px;">Sol Taraftaki Menülerden Kolayca Geçiş Yapabilirsin.</p>
+            <p style="font-size: 32px;">Bu sitede bana ait çoğu bilgiyi bulabileceksiniz.</p>
+            <div class="container">
+            NEOS YAZILIM
+            
+            <div class="stack" style="--stacks: 3;">
+              <span style="--index: 0;">UTKU ABLAK</span>
+              <span style="--index: 1;">UTKU ABLAK</span>
+              <span style="--index: 2;">UTKU ABLAK</span>
+            </div>
+            <span class="right">Jr. Developer</span>
+          </div>
+            ` 
+         }
+
+        function fonksiyon2(){
+
+            document.getElementById("sagpanel").style.backgroundColor="#F5F0BB"
+            document.getElementById("sagpanel").style.textAlign="center"
+            document.getElementById("sagpanel").innerHTML=
+            `
+            <h1 style="color: black;">Ben Kimim?</h1>
+            <p style="font-size: 26px;">Adım Utku, 21 Yaşındayım. İstanbul'da yaşıyorum. Üniversiteyi açıktan okuyorum. Lise Mezunuyum. Yazılıma olan ilgim çocukluğmdan beri hep vardı. 3 Sene farklı firmalarda satış danışmanlığı yaptım.
+            Şu an NEOS Yazılım & Akademi'de Full Stack Developer eğitimi Alıyorum.
+            Yeni nesil cihazların da çıkmasıyla yazılım sektörünün çok daha ilerleyeceğini düşünüyorum. 
+            </p>
+            <p style="font-size: 32px;">Daha fazlası için sosyal medya hesaplarımı takip edebilirsiniz!</p>
+      </article>
+        
+      <ul>
+        <li>
+          <a href="https://github.com/ablakutku" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <span>  Github</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/utkuablak77" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <span>  Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/utkuoloji" target="_blank">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <span>  Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/utku-ablak-794b52184/" target="_blank">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <span>   Linkedin</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/utkuablak1">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <span> Instagram</span>
+          </a>
+        </li>
+
+        <img style="height: 450px;" src="ua.jpg" alt="">
+     
+
+        `
+      }
+
+        function fonksiyon3(){
+
+document.getElementById("sagpanel").style.backgroundColor="#7D9D9C"
+document.getElementById("sagpanel").style.textAlign="center"
+document.getElementById("sagpanel").innerHTML=
+            `
+
+            <h1>Bu sayfada Appendchild Methodunu Göreceksiniz</h1>
+<h2>The appendChild() Methodu</h2>
+
+<input type="text" name="" id="inp1">
+
+<ul id="myList">
+  <li>Kahve</li>
+  <li>Çay</li>
+</ul>
+
+<p>"Gönder" butonuna basınca yukarıda yazdığınız text en sona eklenecek:</p>
+
+<button onclick="myFunction()">Gönder</button>
+
+            
+            `
+      }
+
+      function myFunction() {
+
+
+var yazi = document.getElementById("inp1").value;
+
+// Create an "li" node:
+const node = document.createElement("li");
+
+// Create a text node:
+const textnode = document.createTextNode(yazi);
+
+// Append the text node to the "li" node:
+node.appendChild(textnode);
+
+// Append the "li" node to the list:
+document.getElementById("myList").appendChild(node);
+
+
+}
+
+    </script>
+</body>
+</html>
