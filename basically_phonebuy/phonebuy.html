@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yurtdışı Telefon Satın Al</title>
+    <style>
+         #telefonlar{
+            margin-left: 20%;
+            margin-top: 100px;
+            text-align: center;
+            align-items: center;
+         }
+        #samsung{
+            height: 600px;
+            width: 400px;
+            border: 2px solid black;
+            float: left;
+            font-size: 32px;
+        }
+        #xiaomi{
+            height: 600px;
+            width: 400px;
+            border: 2px solid black;
+            float: left;
+            font-size: 32px;
+        }
+        #nothing{
+            height: 600px;
+            width: 400px;
+            border: 2px solid black;
+            float: left;
+            font-size: 32px;
+        }
+        #sepet{
+            border: 1px solid white;
+            margin-top: 700px;
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body> 
+    
+    <h1 style="margin-top: 50px; margin-left: 45%;">Telefon Fiyat Listesi</h1>
+
+    <div id="telefonlar">
+
+
+        <div id="samsung">
+            Galaxy S22 Ultra
+            <img style="height: 300px;" src="https://samsung-akinon.b-cdn.net/products/2022/03/03/12380/93fbcfb1-9b13-4d6b-a275-12a10184145d.jpg" alt="">
+            <p>Fiyat:</p>
+            <p id="fiyat">35.999 TL</p>
+            <button style="height: 50px;" onclick="samsung()">Sepete Ekle</button> 
+
+        </div>
+        <div id="xiaomi"> 
+            Xiaomi 12 Ultra
+            <img style="height: 300px;" src="https://www.notebookcheck-tr.com/uploads/tx_nbc2/pms_1656916095.70948543.png" alt="">
+            <p>Fiyat:</p>
+            <p id="fiyat">33.999 TL</p>
+            <button style="height: 50px;" onclick="xiaomi()">Sepete Ekle</button> 
+        </div>
+        <div id="nothing">
+            Nothing Phone (1)
+            <img style="height: 300px;" src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/23843996/ajohnson_220709_5332_0013_sq.jpg" alt="">
+            <p>Fiyat:</p>
+            <p id="fiyat">9.999 TL</p>
+            <button style="height: 50px;" onclick="nothing()">Sepete Ekle</button>
+        </div>
+
+    </div>
+
+    <div id="sepet">
+        <p id="toplam">Toplam Fiyat : 0</p>
+    </div>
+    
+    
+
+    
+
+    <script>
+
+        var samsungFiyat = 35999
+        var xiaomiFiyat = 33999
+        var nothingFiyat = 9999
+        var samsungAdet = 0
+        var xiaomiAdet = 0
+        var nothingAdet = 0
+        var toplamFiyat = 0
+
+        function samsung(){
+           samsungAdet++
+           toplamFiyat = samsungAdet*samsungFiyat + xiaomiAdet*xiaomiFiyat + nothingAdet*nothingFiyat;
+           document.getElementById('toplam').innerHTML = 'Toplam Fiyat :' + toplamFiyat + 'TL'
+        }
+        function xiaomi(){
+            xiaomiAdet++
+            toplamFiyat = samsungAdet*samsungFiyat + xiaomiAdet*xiaomiFiyat + nothingAdet*nothingFiyat;
+           document.getElementById('toplam').innerHTML = 'Toplam Fiyat :' + toplamFiyat + 'TL'
+        }
+        function nothing(){
+            nothingAdet++
+            toplamFiyat = samsungAdet*samsungFiyat + xiaomiAdet*xiaomiFiyat + nothingAdet*nothingFiyat;
+           document.getElementById('toplam').innerHTML = 'Toplam Fiyat :' + toplamFiyat + 'TL'
+        
+        }
+    </script>
+</body>
+</html>
