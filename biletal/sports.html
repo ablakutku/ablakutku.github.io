@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spor Müsabakaları</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<header class="header">
+    <h1 class="logo"><a href="index.html"><img src="logo.png" alt="" style="width: 60px;"></a></h1>
+  <ul class="main-nav">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="concerts.html">Konserler</a></li>
+      <li><a href="sports.html">Spor Müsabakaları</a></li>
+      <li><a href="#">TV Programları</a></li>
+      <li><a href="contact.html">bize ulasın</a></li>
+      <a><button onclick="openForm()" class="buttonuye">Üye Girişi</button></a>
+      <div class="form-popup" id="myForm">
+        <form class="form-container">
+          <h1>Üye Girişi</h1>
+      
+          <label for="email"><b>E-Posta Adresi:</b></label>
+          <input type="text" placeholder="E-Posta giriniz" name="email" required>
+      
+          <label for="psw"><b>Parola:</b></label>
+          <input type="password" placeholder="Parola giriniz" name="psw" required>
+            <button type="login" class="login" onclick="girisFunc()">Giriş Yap</button>
+            <button type="register" class="btn" onclick="kayitFunc()">Kaydol</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Kapat</button>
+        </form>
+    </ul>
+</header> 
+<body>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

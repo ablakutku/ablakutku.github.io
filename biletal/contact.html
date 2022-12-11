@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bize Ulaşın</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="header">
+		<h1 class="logo"><a href="index.html"><img src="logo.png" alt="" style="width: 60px;"></a></h1>
+      <ul class="main-nav">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="concerts.html">Konserler</a></li>
+          <li><a href="#">Spor Müsabakaları</a></li>
+          <li><a href="#">TV Programları</a></li>
+          <li><a href="contact.html">bize ulasın</a></li>
+          <a><button onclick="openForm()" class="buttonuye">Üye Girişi</button></a>
+          <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1>Üye Girişi</h1>
+          
+              <label for="email"><b>E-Posta Adresi:</b></label>
+              <input type="text" placeholder="E-Posta giriniz" name="email" required>
+          
+              <label for="psw"><b>Parola:</b></label>
+              <input type="password" placeholder="Parola giriniz" name="psw" required>
+                <button type="login" class="login" onclick="girisFunc()">Giriş Yap</button>
+                <button type="register" class="btn" onclick="kayitFunc()">Kaydol</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Kapat</button>
+            </form>
+        </ul>
+	</header> 
+  <div class="contact">
+    <h2>Bize Ulaşın</h2>
+    <form action="text">
+      <input type="text" name="name" placeholder="Adınız">
+    <br>
+      <input type="text" name="email" placeholder="E-mail">
+    <br>
+      <input type="text" name="subject" placeholder="Konu">
+    <br>
+    <p style="font-size: 1em; margin-top: 4px; margin-bottom: -10px;">Konu Seçiniz : </p>
+    <input type="radio" id="sikayet" name="konu" value="HTML">
+<label for="html">Şikayet</label><br>
+<input type="radio" id="talep" name="konu" value="CSS">
+<label for="css">Talep</label><br>
+<input type="radio" id="oneri" name="konu" value="JavaScript">
+<label for="javascript">Öneri</label>
+<br>
+      <textarea name="message" style="width: 400px; height: 100px;" placeholder="Mesajınız"></textarea>
+    <br>
+      <button type="submit" class="button_1">Gönder</button>
+
+    </form>
+  </div>
+
+
+  <div class="harita">
+    <h3>Konumumuz</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.086751818843!2d28.872698315413125!3d40.9795811793036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabd361d9f2bcd%3A0x109cda61c48e4b76!2sNeos%20Yaz%C4%B1l%C4%B1m%20Akademi!5e0!3m2!1str!2str!4v1670322340161!5m2!1str!2str" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
