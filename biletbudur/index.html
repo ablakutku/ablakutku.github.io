@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiletinBurada</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+		<h1 class="logo"><a href="index.html"><img src="logo.png" alt="" style="width: 60px;"></a></h1>
+      <ul class="main-nav">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="concerts.html">Konserler</a></li>
+          <li><a href="#">Spor Müsabakaları</a></li>
+          <li><a href="#">TV Programları</a></li>
+          <li><a href="contact.html">bize ulasın</a></li>
+          <a><button onclick="openForm()" class="buttonuye">Üye Girişi</button></a>
+          <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1>Üye Girişi</h1>
+          
+              <label for="email"><b>E-Posta Adresi:</b></label>
+              <input type="text" placeholder="E-Posta giriniz" name="email" required>
+          
+              <label for="psw"><b>Parola:</b></label>
+              <input type="password" placeholder="Parola giriniz" name="psw" required>
+                <button type="login" class="login" onclick="girisFunc()">Giriş Yap</button>
+                <button type="register" class="btn" onclick="kayitFunc()" >Kaydol</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Kapat</button>
+            </form>
+        </ul>
+	</header> 
+
+    <div class="anasayfa">
+        <p id="yazi1">Türkiye'nin en avantajlı bilet alma platformu</p>
+        <p id="yazi2">Sende bizi Instagram ve Twitter'da takip et, sınırlı sayıda kampanyaları kaçırma!</p>
+        <p id="yazi3">↓ POPÜLER KONSERLER ↓</p>
+    </div>
+
+  <div id="slider-wrapper">
+    <div class="slider">
+        <a class="img-bir">
+            <img src="indir.jpeg">
+         </a>
+        <a class="img-iki">
+                <img src="indir (1).jpeg">
+        </a>
+        <a class="img-uc">
+            <img src="indir (2).jpeg">
+        </a>
+        <a class="img-dort">
+            <img src="indir (3).jpeg">
+        </a>
+        <a class="img-bes">
+            <img src="indir (4).jpeg">
+        </a>
+        <a class="img-alti">
+            <img src="uzi.jpeg">
+        </a>
+        <a class="img-yedi">
+            <img src="indir (5).jpeg">
+        </a>
+        <a class="img-sekiz">
+            <img src="indir (6).jpeg">
+        </a>
+        <a class="img-dokuz">
+            <img src="indir (7).jpeg">
+        </a>
+        <a class="img-on">
+            <img src="indir (8).jpeg">
+        </a>
+        <a class="img-onbir">
+            <img src="indir (9).jpeg">
+        </a>
+        <a class="img-oniki">
+            <img src="indir (10).jpeg">
+        </a>
+     </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

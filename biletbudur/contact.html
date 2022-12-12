@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bize Ulaşın</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="header">
+		<h1 class="logo"><a href="index.html"><img src="logo.png" alt="" style="width: 60px;"></a></h1>
+      <ul class="main-nav">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="concerts.html">Konserler</a></li>
+          <li><a href="#">Spor Müsabakaları</a></li>
+          <li><a href="#">TV Programları</a></li>
+          <li><a href="contact.html">bize ulasın</a></li>
+          <a><button onclick="openForm()" class="buttonuye">Üye Girişi</button></a>
+          <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1>Üye Girişi</h1>
+          
+              <label for="email"><b>E-Posta Adresi:</b></label>
+              <input type="text" placeholder="E-Posta giriniz" name="email" required>
+          
+              <label for="psw"><b>Parola:</b></label>
+              <input type="password" placeholder="Parola giriniz" name="psw" required>
+                <button type="login" class="login" onclick="girisFunc()">Giriş Yap</button>
+                <button type="register" class="btn" onclick="kayitFunc()">Kaydol</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Kapat</button>
+            </form>
+        </ul>
+	</header> 
+
+  <div class="background">
+    <div class="container">
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          <div class="screen-header-right">
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
+        </div>
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>BİZE</span>
+              <span>ULAŞIN</span>
+            </div>
+            <div class="app-contact">İLETİŞİM İÇİN : utkuablak@icloud.com</div>
+          </div>
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="AD SOYAD">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="E-POSTA">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="TELEFON NUMARASI">
+              </div>
+              <div class="app-form-group message">
+                <input class="app-form-control" placeholder="MESAJINIZ">
+              </div>
+              <div class="app-form-group buttons">
+                <button class="app-form-button">İPTAL ET</button>
+                <button class="app-form-button">GÖNDER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
