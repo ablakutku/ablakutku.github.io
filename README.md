@@ -1,4 +1,4 @@
-# NeoFetch tarzında Portfolio sitemi oluşturdum
+NeoFetch tarzında Portfolio sitemi oluşturdum
 
 https://ablakutku.github.io/
 
