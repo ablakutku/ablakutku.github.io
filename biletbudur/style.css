@@ -645,3 +645,128 @@ justify-content: space-around
       align-items: center;
       margin-top: 5%;
     }
+
+	/* Smartphones (landscape) ----------- */
+   
+  @media only screen and (min-width : 321px) and (max-width : 480px) {
+   
+    .card {
+      margin-top: 5%;
+    }
+    .card p{
+      display: none;
+    }
+
+    .satin-al{
+      display: grid;
+      align-items: center;
+      padding: 10%;
+      }
+      .satin-al2{
+        margin-top: 5%;
+        display: grid;
+        justify-content: space-around;
+        }
+
+        .coming-concerts{
+          display: grid;
+          place-items: center;
+          min-height: 15vh !important;
+          margin-bottom: 10px;
+          margin-top: 10px;
+          animation-name: scaling;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+        }
+    
+        @keyframes scaling {
+          0% {
+            transform: scale(0.6);
+          }
+          50% {
+            transform: scale(0.8);
+          }
+          100% {
+            transform: scale(0.6);
+          }
+          
+        }
+    
+        .coming-concerts h1{
+            font-size: clamp(3rem, 5vmin, 6rem);
+            font-family: sans-serif;
+            color: #34495e;
+          }
+          
+          .main-nav {
+            margin-top: 1px;
+          }
+          .logo a,
+          .main-nav a {
+            padding: 5px 75px;
+            text-transform: uppercase;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+          }
+          
+          .main-nav a {
+            padding-top: 20px;
+            color: #34495e;
+            font-size: 1em;
+          }
+          
+          .main-nav a:hover {
+            color: #aa5404;
+          }
+          
+
+  }
+   
+  /* Tablets (landscape) ----------- */
+   
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+    
+    .satin-al{
+      display: grid;
+      align-items: center;
+      padding: 10%;
+      }
+      .satin-al2{
+        margin-top: 5%;
+        display: grid;
+        justify-content: space-around;
+        }
+
+        .card {
+          margin: 59%;
+        }
+
+        .card p{
+          display: none;
+        }
+  }
+  /* Tablets (portrait) ----------- */
+   
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+   
+
+    .satin-al{
+      justify-content: space-around;
+        }
+      .satin-al2{
+        margin-top: 5%;
+        justify-content: space-around;
+        }
+
+    .card .btn{
+      position: relative;
+      bottom: -20px;
+    }
+
+    .card{
+      display: grid;
+    }
+
+  }
