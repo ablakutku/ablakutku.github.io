@@ -133,3 +133,25 @@ theToggle.onclick = function() {
    toggleClass(this, 'on');
    return false;
 }
+
+window.onscroll = function() {
+  scrollFunction()
+  };
+  function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+  document.getElementByClassName("upbutton").style.display = "block"
+  else
+  document.getElementByClassName("upbutton").style.display = "none"
+  }
+  function topFunction() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+  document.body.scrollTop -= 40
+  document.documentElement.scrollTop -= 40
+  setTimeout(function() {
+  topFunction()
+  }, 0)
+  } else {
+  document.body.scrollTop = 0
+  document.documentElement.scrollTop = 0
+  }
+  }

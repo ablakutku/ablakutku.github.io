@@ -783,7 +783,7 @@ justify-content: space-around
           .navtoggle {
             background-color: #541212;
             height: 65px;
-            position: inherit;
+            position: initial;
           }
 
           .navtoggle ul {
@@ -815,9 +815,11 @@ justify-content: space-around
           #menuToggle input
           {
             display: flex;
-            width: 300px !important;
-            height: 52px;
+            width: 50px !important;
+            height: 50px;
             position: absolute;
+            top: -10px;
+            left: -10px;
             cursor: pointer;
             opacity: 0;
             z-index: 2;
@@ -896,8 +898,27 @@ justify-content: space-around
             transform: none;
           }
 
-  }
-
+        .upbutton{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border-radius: 50%;
+            z-index: 9999;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background: rgb(161, 12, 12);
+            padding: 0px;
+            width: 30px;
+            height: 30px;
+        }
+        .upbutton p{
+          display: flex;
+          font-size: 20px;
+          color: white;
+          margin-top: 5px;
+          margin-left: 30%;
+        }
   .buttonuye{
     display: none;
   }
@@ -1013,3 +1034,4 @@ justify-content: space-around
     }
 
   }
+}
