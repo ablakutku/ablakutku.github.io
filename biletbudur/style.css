@@ -718,7 +718,7 @@ justify-content: space-around
           .slider{
             display: grid;
             position: absolute;
-            right: 5%;
+            right: 5vh;
           }
           .slider img{
             width: 100% !important;
