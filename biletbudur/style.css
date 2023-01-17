@@ -733,7 +733,31 @@ justify-content: space-around
             width: 100% !important;
             height: 100% !important;
           }
-          
+
+          .carousel-inner{
+            width: 100% !important;
+            height: 50%;
+          }
+          .carousel-inner img{
+            width: 100% !important;
+            height: 100% !important;
+          }
+
+          .spor2{
+            display: grid;
+          }
+
+          .programs{
+            display: grid;
+            justify-content: center;
+          }
+
+          .programs-text{;
+            margin-top: 5%;
+          }
+          #text{
+            font-size: 30px;
+          }
 
   }
    
