@@ -988,7 +988,7 @@ justify-content: space-around
       grid-template-rows: 1fr 1fr;
       grid-gap: 5px;
       position: absolute;
-      right: 50vh;
+      right: 40vh;
       
 
     }
