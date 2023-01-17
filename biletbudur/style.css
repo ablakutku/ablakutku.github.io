@@ -59,6 +59,7 @@ a {
 	text-align: center;
 	display: block;
   text-decoration: none;
+  margin-right: 15px;
 }
 
 .main-nav a {
@@ -715,7 +716,9 @@ justify-content: space-around
           }
 
           .slider{
-            display: flex;
+            display: grid;
+            position: absolute;
+            right: 5%;
           }
           .slider img{
             width: 100% !important;
@@ -923,30 +926,6 @@ justify-content: space-around
           display: none;
         }
   }
-  /* Tablets (portrait) ----------- */
-   
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-   
-
-    .satin-al{
-      justify-content: space-around;
-        }
-      .satin-al2{
-        margin-top: 5%;
-        justify-content: space-around;
-        }
-
-    .card .btn{
-      position: relative;
-      bottom: -20px;
-    }
-
-    .card{
-      display: grid;
-    }
-
-  }
-
 
   /* Tablets ----------- */
 
