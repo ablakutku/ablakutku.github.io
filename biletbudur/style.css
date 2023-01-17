@@ -778,10 +778,24 @@ justify-content: space-around
             background-color: #0032f9;
             overflow: hidden;
           }
-          nav {
+          .navtoggle {
             background-color: #541212;
             height: 65px;
             position: inherit;
+          }
+
+          .navtoggle ul {
+            padding-top: 80px !important;
+          }
+
+          .navtoggle a {
+            text-decoration: none;
+            color: #1E1E23;
+            opacity:1;
+            font-family: 'work sans', sans serif;
+            font-size: 1.5em;
+            font-weight: 400;
+            transition: 200ms;
           }
           
           
@@ -855,7 +869,7 @@ justify-content: space-around
           {
             position: absolute;
             width: 100%;
-            height: 400px;
+            height: 300px;
             box-shadow: 0 0 10px #85888C;
             margin: -50px 0 0 -50px;
             padding: 50px;
@@ -866,6 +880,7 @@ justify-content: space-around
             transform: translate(-100%, 0);
             transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
             text-transform: uppercase;
+            background: rgba(255, 255, 255, 0.952);
           }
           
           #menu li
@@ -879,6 +894,10 @@ justify-content: space-around
             transform: none;
           }
 
+  }
+
+  .buttonuye{
+    display: none;
   }
    
   /* Tablets (landscape) ----------- */

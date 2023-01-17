@@ -19,26 +19,27 @@
 
 </head>
 <body>
-  <nav role="navigation">
-    <div id="menuToggle">
-      <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-    <ul id="menu">
-      <li><a href="index.html">Ana Sayfa</a></li>
-      <li><a href="concerts.html">Konserler</a></li>
-      <li><a href="sports.html">Spor Müsabakaları</a></li>
-      <li><a href="programs.html">TV Programları</a></li>
-      <li><a href="contact.html">bize ulasın</a></li>
-      <a><button onclick="openForm()" class="buttonuye">Üye Girişi</button></a>
-    </ul>
-   </div>
-  </nav>
-</div>
-</div>
-</div>
-  <header class="header">
+
+            <nav class="navtoggle" role="navigation">
+              <div id="menuToggle">
+                <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              <ul id="menu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="concerts.html">Konserler</a></li>
+                <li><a href="sports.html">Spor Müsabakaları</a></li>
+                <li><a href="programs.html">TV Programları</a></li>
+                <li><a href="contact.html">bize ulasın</a></li>
+              </ul>
+             </div>
+            </nav>
+          </div>
+         </div>
+      </div>
+
+    <header class="header">
 		<h1 class="logo"><a href="index.html"><img src="logo.png" alt="" style="width: 60px;"></a></h1>
       <ul class="main-nav">
           <li><a href="index.html">Ana Sayfa</a></li>
@@ -57,7 +58,7 @@
               <label for="psw"><b>Parola:</b></label>
               <input type="password" placeholder="Parola giriniz" name="psw" required>
                 <button type="login" class="login" onclick="girisFunc()">Giriş Yap</button>
-                <button type="register" class="btn" onclick="kayitFunc()">Kaydol</button>
+                <button type="register" class="btn" onclick="kayitFunc()" >Kaydol</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Kapat</button>
             </form>
         </ul>

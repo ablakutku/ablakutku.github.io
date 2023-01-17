@@ -69,13 +69,6 @@ a {
   
   body {
     background-color: #dedede;
-    font-size: 12px;
-  }
-  
-  body, button, input {
-    font-family: 'Montserrat', sans-serif !important;
-    font-weight: 700;
-    letter-spacing: 1.4px;
   }
   
   .background {
@@ -297,3 +290,304 @@ a {
     }
   }
   
+  @media only screen and (min-width : 600px) {
+    .navtoggle{
+      display: none;
+    }
+  }
+
+
+/* Smartphones (landscape) ----------- */
+ 
+@media only screen and (min-width : 321px) and (max-width : 480px) {
+ 
+  body{
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .card {
+    margin-top: 5%;
+  }
+  .card p{
+    display: none;
+  }
+
+  .satin-al{
+    display: grid;
+    align-items: center;
+    padding: 10%;
+    }
+    .satin-al2{
+      margin-top: 5%;
+      display: grid;
+      justify-content: space-around;
+      }
+
+      .coming-concerts{
+        display: grid;
+        place-items: center;
+        min-height: 15vh !important;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        animation-name: scaling;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+  
+      @keyframes scaling {
+        0% {
+          transform: scale(0.6);
+        }
+        50% {
+          transform: scale(0.8);
+        }
+        100% {
+          transform: scale(0.6);
+        }
+        
+      }
+  
+      .coming-concerts h1{
+          font-size: clamp(3rem, 5vmin, 6rem);
+          font-family: sans-serif;
+          color: #34495e;
+        }
+        
+        .main-nav {
+          display: none;
+        }
+
+        .slider{
+            position: relative;
+            margin-right: 200px;
+        }
+        .slider img{
+          width: 100% !important;
+          height: 100% !important;
+        }
+
+        .carousel-inner{
+          width: 100% !important;
+          height: 50%;
+        }
+        .carousel-inner img{
+          width: 100% !important;
+          height: 100% !important;
+        }
+
+        .spor2{
+          display: grid;
+        }
+
+        .programs{
+          display: grid;
+          justify-content: center;
+        }
+
+        .programs-text{
+          margin-top: 5%;
+        }
+        #text{
+          font-size: 30px;
+        }
+        
+        body {
+          background-color: #f9f9f9;
+          margin: 0;
+          padding: 0;
+        }
+        a {
+          text-decoration: none;
+          color: #1E1E23;
+          opacity:1;
+          font-family: 'work sans', sans serif;
+          font-size: 1.5em;
+          font-weight: 400;
+          transition: 200ms;
+        }
+        a:hover {
+          opacity:0.5;
+        }
+        ul {
+          padding: 0;
+          list-style-type: none;
+        }
+      
+        .content {
+          border: 1px solid #36383F;
+          border-radius: 20px;
+          width: 94%;
+          height: 91%;
+          background-color: #0032f9;
+          overflow: hidden;
+        }
+        .navtoggle {
+          background-color: #541212;
+          height: 65px;
+          position: inherit;
+        }
+
+        .navtoggle ul {
+          padding-top: 80px !important;
+        }
+
+        .navtoggle a {
+          text-decoration: none;
+          color: #1E1E23;
+          opacity:1;
+          font-family: 'work sans', sans serif;
+          font-size: 1.5em;
+          font-weight: 400;
+          transition: 200ms;
+        }
+        
+        
+        #menuToggle {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          top: 25px;
+          left: 25px;
+          z-index: 1;
+          -webkit-user-select: none;
+          user-select: none;
+        }
+        
+        #menuToggle input
+        {
+          display: flex;
+          width: 300px !important;
+          height: 52px;
+          position: absolute;
+          cursor: pointer;
+          opacity: 0;
+          z-index: 2;
+          padding: 20px;
+        }
+        
+        #menuToggle span
+        {
+          display: flex;
+          width: 29px;
+          height: 2px;
+          margin-bottom: 5px;
+          position: relative;
+          background: #ffffffa4;
+          border-radius: 3px;
+          z-index: 1;
+          transform-origin: 5px 0px;
+          transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                      background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                      opacity 0.55s ease;
+        }
+        
+        #menuToggle span:first-child
+        {
+          transform-origin: 0% 0%;
+        }
+        
+        #menuToggle span:nth-last-child(2)
+        {
+          transform-origin: 0% 100%;
+        }
+        
+        #menuToggle input:checked ~ span
+        {
+          opacity: 1;
+          transform: rotate(45deg) translate(-3px, -1px);
+          background: #36383F;
+        }
+        #menuToggle input:checked ~ span:nth-last-child(3)
+        {
+          opacity: 0;
+          transform: rotate(0deg) scale(0.2, 0.2);
+        }
+        
+        #menuToggle input:checked ~ span:nth-last-child(2)
+        {
+          transform: rotate(-45deg) translate(0, -1px);
+        }
+        
+        #menu
+        {
+          position: absolute;
+          width: 100%;
+          height: 300px;
+          box-shadow: 0 0 10px #85888C;
+          margin: -50px 0 0 -50px;
+          padding: 50px;
+          padding-top: 75px;
+          background-color: #F5F6FA;
+          -webkit-font-smoothing: antialiased;
+          transform-origin: 0% 0%;
+          transform: translate(-100%, 0);
+          transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+          text-transform: uppercase;
+          background: rgba(255, 255, 255, 0.952);
+        }
+        
+        #menu li
+        {
+          padding: 1px 0;
+          transition-delay: 2s;
+        }
+        
+        #menuToggle input:checked ~ ul
+        {
+          transform: none;
+        }
+
+}
+
+.buttonuye{
+  display: none;
+}
+ 
+/* Tablets (landscape) ----------- */
+ 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+  
+  .satin-al{
+    display: grid;
+    align-items: center;
+    padding: 10%;
+    }
+    .satin-al2{
+      margin-top: 5%;
+      display: grid;
+      justify-content: space-around;
+      }
+
+      .card {
+        margin: 59%;
+      }
+
+      .card p{
+        display: none;
+      }
+}
+/* Tablets (portrait) ----------- */
+ 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+ 
+
+  .satin-al{
+    justify-content: space-around;
+      }
+    .satin-al2{
+      margin-top: 5%;
+      justify-content: space-around;
+      }
+
+  .card .btn{
+    position: relative;
+    bottom: -20px;
+  }
+
+  .card{
+    display: grid;
+  }
+
+}
