@@ -650,6 +650,11 @@ justify-content: space-around
    
   @media only screen and (min-width : 321px) and (max-width : 480px) {
    
+    body{
+      width: 100% !important;
+      height: 100% !important;
+    }
+
     .card {
       margin-top: 5%;
     }
@@ -718,6 +723,15 @@ justify-content: space-around
           
           .main-nav a:hover {
             color: #aa5404;
+          }
+
+          .slider{
+              position: relative;
+              margin-right: 200px;
+          }
+          .slider img{
+            width: 100% !important;
+            height: 100% !important;
           }
           
 
