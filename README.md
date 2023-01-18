@@ -9,6 +9,13 @@ https://ablakutku.github.io/biletbudur
 
 Bu projeyi BootStrap , CSS ve JS kullanarak oluşturdum.
 
+# HavaDurumu Projesi
+
+https://ablakutku.github.io/WeatherAppWithAPI
+
+Bu projeyi OpenWeatherMap API kullanarak JS ile oluşturdum.
+
+
 ## Rozetler
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
