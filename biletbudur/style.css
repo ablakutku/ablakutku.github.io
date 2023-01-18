@@ -33,6 +33,7 @@ ul {
 }
 
 
+
 h2,
 h3,
 a {
@@ -946,6 +947,10 @@ justify-content: space-around
         .card p{
           display: none;
         }
+
+        .div-buton{
+          display: none;
+        }
   }
 
   /* Tablets ----------- */
@@ -979,7 +984,7 @@ justify-content: space-around
 
   /* Desktops and laptops ----------- */
 
-  @media only screen  and (min-width : 1224px) {
+  @media only screen  and (min-width : 1024px) {
     
     .slider {
 
@@ -1004,6 +1009,36 @@ justify-content: space-around
 
     }
 
+    .div-buton{
+      display: none;
+    }
+
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1824px) {
+    
+    .div-buton{
+      display: none;
+    }
+
+  }
+
+  @media screen and (min-height: 624) {
+    
+    .div-buton{
+      display: none;
+    }
+
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1824px) {
+    
+    .div-buton{
+      visibility: hidden;
+    }
+
+  }
+    
   }
 
   /* Large screens ----------- */
@@ -1033,5 +1068,16 @@ justify-content: space-around
 
     }
 
+    .div-buton{
+      display: none;
+    }
+
   }
-}
+
+  @media screen and (min-width: 499) and (max-width: 602px) {
+    
+    .navtoggle{
+      display: none;
+    }
+
+  }
