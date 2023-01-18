@@ -899,27 +899,15 @@ justify-content: space-around
             transform: none;
           }
 
-        .upbutton{
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            border-radius: 50%;
-            z-index: 9999;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            background: rgb(161, 12, 12);
-            padding: 0px;
-            width: 30px;
-            height: 30px;
-        }
-        .upbutton p{
-          display: flex;
-          font-size: 20px;
-          color: white;
-          margin-top: 5px;
-          margin-left: 30%;
-        }
+          #baslik{
+            display: flex;
+            font-size: 30px !important;
+            font-weight: 600 !important;
+            color: #fff;
+            margin-top: -4vh;
+            margin-left: 5vh;
+          }
+
   .buttonuye{
     display: none;
   }
@@ -1069,14 +1057,6 @@ justify-content: space-around
     }
 
     .div-buton{
-      display: none;
-    }
-
-  }
-
-  @media screen and (min-width: 499) and (max-width: 602px) {
-    
-    .navtoggle{
       display: none;
     }
 

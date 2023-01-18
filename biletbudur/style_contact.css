@@ -457,7 +457,7 @@ a {
         #menuToggle input
         {
           display: flex;
-          width: 300px !important;
+          width: 50px !important;
           height: 52px;
           position: absolute;
           cursor: pointer;
