@@ -25,7 +25,7 @@ temp.innerHTML = `${Math.round(result.main.temp)}<span>°c</span>`
 let desc = document.querySelector('.desc')
 desc.innerText = result.weather[0].description
 
-let minMax = document.querySelector('.min-max')
+let minMax = document.querySelector('.minmax')
 minMax.innerText = `${Math.round(result.main.temp_min)}°c / ${Math.round(result.main.temp_max)}°c`
 }
 
