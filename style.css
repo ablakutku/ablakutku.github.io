@@ -48,8 +48,7 @@
   }
   
   .img {
-    width: 280px;
-    grid-area: img;
+    max-width: 300px;
   }
   
   .purple {
