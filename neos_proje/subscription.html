@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Üyelik Satın Al</title>
+    <link rel="stylesheet" href="style_sub.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+    ">
+</head>
+<body>
+
+    <div class="cont-premium">
+        <div class="premium">
+            <h1>Premium Üyelik Satın Al</h1>
+            <p>Üyeliklerinizin süresi dolmuş veya üyeliklerinizin süresi dolmadan önce üyeliklerinizi yenilemek istiyorsanız aşağıdaki butonlardan birini seçebilirsiniz.</p>
+            <div class="premium-btn">
+                <button class="btn-premium" onclick="myFunction()">Üyelik Şartları</button>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><img id="pp" style="width: 70px; margin-left:40%;" src="pp2.png" alt=""><p style="font-size: 15px; margin-left:35%;"><a href="user.
+                ">Üye Paneli</a></p></li>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="post.html">Entry Gönder</a></li>
+            <li><a href="gundem.html">Gündemdekiler</a></li>
+          <li><a href="bildirimler.html">Bildirimler</a></li>
+            <li><a href="subscription.html">Premium Üyelik Satın Al</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="card">
+            <div class="form">
+                <div class="left-side">
+                    <span class="success">Success</span>
+                    <div class="image">
+                         
+                         <img src="bg_sb.jpeg">
+                    </div>
+                    <div class="debit-card">
+                        <div class="card_name">
+                           <small>Kart Sahibi</small>
+                           <span class="user_name">Utku Ablak</span>
+                        </div>
+                            <div class="num_expiry">
+                                <div class="card_number">
+                                   <small>Kart Numarası</small>
+                                   <span class="set_card_number">0000 0000 0000 0000</span>
+                                </div>
+                                <div class="card_cvv">
+                                   <small>CVV</small>
+                                   <span class="user_card_cvv">MM/YYYY</span>
+                               </div>
+                        
+                            </div>
+                    </div> 
+                     
+    
+                    
+                </div>
+                <div class="right-side">
+                    <h3>Payment details</h3>
+                    <div class="input-text">
+                        <input type="text" id="user_name_input" onkeyup="userName(this.value)" placeholder="Kart Sahibi" require>
+                        <span>Cardholder name</span>
+                    </div>
+                    <div class="input-text">
+                        <input type="text" id="user_name_input" onkeyup="userCardNumber(this.value)" placeholder="Kart Numarası" require>
+                        <span>Card No</span>
+                    </div>
+                    <div class="input-div">
+                        <div class="input-text">
+                           <input type="text" onkeyup="usercardcvv(this.value)" placeholder="AY/YYYY" data-slots="MY" require>
+                           <span>Valid upto</span>
+                        </div>
+                        <div class="input-text ">
+                           <input type="text" placeholder="000" data-slots="0" data-accept="\d" size="3" require>
+                           <span>CVV</span>
+                        </div>
+                    </div> 
+                    <div class="button">
+                        <button class="click-pay">Ödeme Yap</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

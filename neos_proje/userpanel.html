@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Üye Paneli</title>
+	<link rel="stylesheet" type="text/css" href="styleuser.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav>
+        <ul>
+            <li><img id="pp" style="width: 70px; margin-left:40%;" src="pp2.png" alt=""><p style="font-size: 15px; margin-left:35%;"><a href="user.
+                ">Üye Paneli</a></p></li>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="post.html">Entry Gönder</a></li>
+            <li><a href="gundem.html">Gündemdekiler</a></li>
+          <li><a href="bildirimler.html">Bildirimler</a></li>
+            <li><a href="subscription.html">Premium Üyelik Satın Al</a></li>
+        </ul>
+    </nav>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Kayıt Ol</label>
+					<input type="text" name="txt" placeholder="Kullanıcı Adı" required="">
+					<input type="email" name="email" placeholder="E-Posta" required="">
+					<input type="password" name="pswd" placeholder="Parola" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Giriş Yap</label>
+					<input type="email" name="email" placeholder="E-Posta" required="">
+					<input type="password" name="pswd" placeholder="Parola" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+</body>
+</html>
